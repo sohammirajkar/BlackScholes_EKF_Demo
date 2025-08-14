@@ -49,7 +49,7 @@ body { margin: 0; background: radial-gradient(1200px 600px at 20% 10%, rgba(52, 
 .metrics { display: flex; gap: 16px; margin-top: 12px; }
 .metric { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); padding: 10px 12px; border-radius: 12px; display: flex; gap: 12px; align-items: baseline; }
 .metric .label { color: var(--muted); font-size: 12px; }
-.metric .value { font-weight: 600; }
+.metric .value { font-weight: 600; color: #ffffff; }
 
 .footer { color: var(--muted); font-size: 12px; padding: 20px 28px; border-top: 1px solid rgba(255,255,255,0.06); }
 
