@@ -10,7 +10,7 @@ import { Slider } from "./components/ui/slider";
 import { Badge } from "./components/ui/badge";
 import { Play, LineChart, FlaskConical } from "lucide-react";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://ts-py-options.preview.emergentagent.com';
 const API = `${BACKEND_URL}/api`;
 
 function number(v, d = 4) {
