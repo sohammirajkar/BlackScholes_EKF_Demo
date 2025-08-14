@@ -37,7 +37,7 @@ def norm_cdf(x: float) -> float:
 
 
 def bs_call_price(S: float, K: float, r: float, T: float, sigma: float) -> float:
-    if T &lt;= 0 or sigma &lt;= 0 or S &lt;= 0 or K &lt;= 0:
+    if T <= 0 or sigma <= 0 or S <= 0 or K <= 0:
         return max(S - K, 0.0)
     d1 = (log(S / K) + (r + 0.5 * sigma * sigma) * T) / (sigma * sqrt(T))
     d2 = d1 - sigma * sqrt(T)
