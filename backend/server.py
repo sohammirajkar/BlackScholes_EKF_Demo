@@ -271,7 +271,7 @@ async def kalman_fit(req: FitRequest):
         # Innovation
         y = call_obs[t] - h
         S_cov = H * P_pred * H + R
-        K_gain = P_pred * H / S_cov if S_cov &gt; 1e-12 else 0.0
+        K_gain = P_pred * H / S_cov if S_cov > 1e-12 else 0.0
 
         # Update
         x = x_pred + K_gain * y
